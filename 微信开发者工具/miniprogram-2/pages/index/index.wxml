@@ -1,0 +1,95 @@
+<view class="body">
+<view class="body-wrapper">
+<view class="date">
+<view class="date-logo">
+<image src="/pages/images/温度.png"></image>
+</view>
+<view class="date-text">
+<view class="date-title">温度</view>
+<view class="date-value">{{temp}}℃</view>
+</view>
+</view>
+<view class="date">
+  <view class="date-logo">
+<image src="/pages/images/温湿度.png"></image>
+</view>
+<view class="date-text">
+<view class="date-title">湿度</view>
+<view class="date-value">{{humi}}%</view>
+</view>
+</view>
+
+
+
+</view>
+
+<view class="body-wrapper">
+<view class="date">
+<view class="date-logo">
+<image src="/pages/images/火焰.png"></image>
+</view>
+<view class="date-text">
+<view class="date-title">火焰</view>
+<view class="date-value {{fire >= 100 ? 'fire' : ''}}">{{fire < 300 ? '起火' : '正常'}}</view>
+</view>
+
+
+</view>
+<view class="date">
+  <view class="date-logo">
+<image src="/pages/images/空气.png"></image>
+</view>
+<view class="date-text">
+<view class="date-title">空气</view>
+<view class="date-value {{mq >= 600 ? 'mq' : ''}}">{{mq >1900 ? '通风' : '良好'}}</view>
+</view>
+</view>
+                                                                                                                                     
+
+
+
+
+</view>
+
+<view class="body-wrapper">
+<view class="date">
+<view class="date-logo">
+<image src="/pages/images/紫外灯.png"></image>
+</view>
+<view class="date-text">
+<view class="date-title">紫外灯</view>
+<view class="date-value"></view>
+<switch checked="{{switch1_checked}}" bindchange="handleSwitch1"></switch>
+</view>
+</view>
+<view class="date">
+<view class="date-logo">
+<image src="/pages/images/风扇.png"></image>
+</view>
+<view class="date-text">
+<view class="date-title">风扇</view>
+<view class="date-value"></view>
+<switch checked="{{switch2_checked}}" bindchange="handleSwitch2"></switch>
+</view>
+</view>
+</view>
+<view class="body-wrapper">
+<view class="date">
+<view class="date-logo">
+<image src="/pages/images/电加热.png"></image>
+</view>
+<view class="date-text">
+<view class="date-title">加热片</view>
+<view class="date-value"></view>
+<switch checked="{{switch3_checked}}" bindchange="handleSwitch3"></switch>
+</view>
+</view>
+</view>
+</view>
+
+
+
+
+
+
+
